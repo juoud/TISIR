@@ -1,8 +1,36 @@
-<h1>Description des cas d'utilisation de l'application TISIR</h1>
-<p> Dans les paragraphe qui suivent, le détail sur les principaux cas d'utilisation identifiés dans le cadre du projet, à savoir :</p>
-<ul>
-  <li>Prendre la photo de l'objet</li>
-  <li>Demander le bon bac poubelle pour le dépôt de l'objet</li>
-</ul>
-<hr />
+1. Description des cas d'utilisation de l'application TISIR :
+  Dans les paragraphe qui suivent, le détail sur les principaux cas d'utilisation identifiés dans le cadre du projet, à savoir :
+  - TISIR-UC01 : Prendre des images d'un objet
+  - TISIR-UC02 : Remplacer une image de l'objet
+  - TISIR-UC03 : Demander le bon bac poubelle pour le dépôt de l'objet
 
+  1.1 TISIR-UC01 : Prendre la photo de l'objet
+    1.1.1 Brève description
+    Un membre de la communauté de l'ÉTS désire capturer les images de principaux endroits (surfaces) d'un objets 
+    afin de les soumettre aux traitements et vérification de TISIR.
+
+    1.1.2. Acteur principal
+    Membre d'une communauté de l'ÉTS
+    
+    1.1.3. Pré-conditions
+        - Le Membre d'une communauté de l'ÉTS doit autoriser TISIR de mettre en marche la caméra ou webcam de son appareil.
+    
+    1.1.4. Post-conditions
+        - Des photos de principales façades (surfaces ou endroits) de l'objet sont capturées.
+    
+    1.1.5. Scénario principal
+        1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet. Il place un objet 
+           à une distance et à une position décidement pré-définies de la caméra ou webcam de son appareil puis il met 
+           en marche la vidéo.
+        
+        2- L'application TISIR allume la caméra et montre en live l'objet. Il indique aussi à l'utilisateur, à titre de rappel, 
+           les principaux endroits de l'objet qu'il faudrait capturer l'image. Ces endoits facilitent l'extraction des caractéristiques
+           de l'images telles que la hauteur, la couleur, l'épaisseur, ... qui seront utilisées pour la reconnaissance de cet objet.
+           
+        3- Pour chaque endroit ou façade indiqué par TISIR, l'utilisateur met l'objet dans la bonne position et capture une image.
+        
+        4- TISIR affiche chacune de ses images capturées par la Membre dMune communauté de l'ÉTS.
+        
+    1.1.6. SCÉNARIOS ALTERNATIFS : 
+      a- image de certains endroits de l'objet est absent
+      b- 

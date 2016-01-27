@@ -69,10 +69,21 @@
     2.1.9. SCÉNARIOS ALTERNATIFS : 
       a- Le membre d'une communauté de l'ÉTS abandonne la prise d'images :
       
-      b- La batérie de l'appareil mobile ou de l'ordinateur portable du membre d'une communauté de l'ÉTS est soudainement déchargée :
+         * S'il quitte le site et ferme le navigateur :
+           - Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la recyclabilité
+             et reprendre à l'étape 1 du scénatios principale (2.1.9.)
       
-      d- Les images de certains endroits de l'objet sont absentes :
+         * S'il quitte la page de vérification de la recyclabilité d'un objet pour une autre page de TISIR :
+           - À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS reprend à l'étape où il a laissé.
+           
+      b- La batérie de l'appareil mobile ou de l'ordinateur portable du membre d'une communauté de l'ÉTS est soudainement déchargée :
+         
+         * Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la recyclabilité
+           et reprendre à l'étape 1 du scénario principal (2.1.9.)
+      
+      c- Les images de certaines surfaces de l'objet sont absentes :
 
+         * Le membre d'une communauté de l'ÉTS reprend à l'étape 3.
  
  2.2 TISIR-UC02 : Mettre la vidéo en marche
     

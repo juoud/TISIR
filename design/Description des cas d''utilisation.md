@@ -10,14 +10,14 @@
     Dans les paragraphe qui suivent, nous décrivont les principaux cas d'utilisation présentement identifiés. 
     Ces cas d'utilisation sont les suivants : 
   
-    - TISIR-UC01 : Prendre les images d'un objet
+    - TISIR-UC01 : Capturer une image de l'objet
     - TISIR-UC02 : Mettre la vidéo en marche
     - TISIR-UC03 : Activer la caméra
     - TISIR-UC04 : Remplacer une image capturée de l'objet
     - TISIR-UC05 : Supprimer une image capturée de l'objet
     - TISIR-UC06 : Demander le bon bac poubelle pour le dépôt d'un objet
   
-  3.1 TISIR-UC01 : Prendre les images d'un objet
+  3.1 TISIR-UC01 : Capturer une image de l'objet
     3.1.1 Brève description
       Un membre de la communauté de l'ÉTS désire capturer les images de principaux côtés (surfaces) d'un objet  
       afin de les soumettre aux traitements et vérification de TISIR. TISIR utilise la caméra embarquée de l'appareil mobile 

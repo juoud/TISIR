@@ -1,10 +1,10 @@
 1. Récit utilisateur considéré
-...
+   En tant que membre d’une communauté de l’ÉTS, je souhaite savoir si un emballage (gobelet, bouteuille ou pot vide, etc) est 
+   recyclable après utilisation de son contenu, ce qui me permettrait de le déposer dans le bon bac à poubelle.
 
 2. Diagramme de cas d'utilisation
 
-    ![alt tag](https://cloud.githubusercontent.com/assets/16263495/12649987/113a871c-c5af-11e5-946b-288e86bea4a9.png)
-
+    ![alt tag](https://cloud.githubusercontent.com/assets/16263495/12650591/5eb8c63c-c5b1-11e5-986a-b81fc7303019.png)
 
 3. Description des cas d'utilisation de l'application TISIR :
     Dans les paragraphe qui suivent, nous décrivont les principaux cas d'utilisation présentement identifiés. 

@@ -3,7 +3,7 @@
 
 2. Diagramme de cas d'utilisation
 
-    ![alt tag](https://cloud.githubusercontent.com/assets/16263495/12635570/a2caf8ae-c552-11e5-8cd9-a7850b13b723.png)
+    ![alt tag](https://cloud.githubusercontent.com/assets/16263495/12649987/113a871c-c5af-11e5-946b-288e86bea4a9.png)
 
 
 3. Description des cas d'utilisation de l'application TISIR :

@@ -50,45 +50,79 @@
     
     3.1.8. Scénario principal
         1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet et la vidéo montrant 
-           l'objet est en cours. Rappelons que la forme de la plupart des objets considérés dans cette étude est soit cylindrique (canette)
-           ou soit parallélépipède ou soit encore assimilable à un entonoir (pot de chocolat chaud) ou circulaire (couvercle du pot 
-           de chocolat chaud). 
-           Dans la vidéo, l'objet apparaît dans la position avec laquelle l'utilisateur l'a placé : hauteur, base supérieure ou base inférieure.
+           l'objet est en cours. Rappelons que la forme de la plupart des objets considérés dans cette étude est soit cylindrique 
+           (canette) ou soit parallélépipède ou soit encore assimilable à un entonoir (pot de chocolat chaud) ou circulaire (couvercle
+           du pot de chocolat chaud). 
+           Dans la vidéo, l'objet apparaît dans la position avec laquelle l'utilisateur l'a placé : hauteur, base supérieure ou base 
+           inférieure.
         
-        2- Le membre d'une communauté de l'ÉTS capture l'image de la partie visible de l'objet sur la vidéo. Cette partie visible pourraît être
-           la hauteur, la base supérieure ou la base inférieure de l'objet.
+        2- Le membre d'une communauté de l'ÉTS capture l'image de la partie visible de l'objet sur la vidéo. Cette partie visible 
+           pourraît être la hauteur, la base supérieure ou la base inférieure de l'objet.
         
-        3- L'application TISIR enregistre l'image capturée en bas de la vidéo et offre la possibilité à l'utilisateur de la remplacer à son gré.
+        3- L'application TISIR enregistre l'image capturée en bas de la vidéo et offre la possibilité à l'utilisateur de la remplacer 
+           ou la supprimer à son gré.
            
-           Le membre d'une communauté de l'ÉTS repète au plus 4 fois les étapes 2 et 3. Et ce dans le but de fournir à TISIR, les images des 
-           divers côtés de l'objet :
+           Le membre d'une communauté de l'ÉTS repète au plus 4 fois les étapes 2 et 3. Et ce dans le but de fournir à TISIR, les 
+           images des divers côtés de l'objet :
            - hauteur : côtés caché et visible,
            - la base supérieure et/ou
            - la base inférieure.
            
         4- Le membre d'une communauté de l'ÉTS quitte l'application ou décide de vérifier la recyclabilité de l'objet dont il a pris 
-           les images (voir le cas d'utilisation TISIR-UC04, "Demander le bon bac poubelle pour le dépôt d'un objet") ou encore peut remplacer 
-           ou supprimer une image capturée (voir les cas d'utilisation TISIR-UC04 et TISIR-UC05 pour de détail).
+           les images (voir le cas d'utilisation TISIR-UC04, "Demander le bon bac poubelle pour le dépôt d'un objet") ou encore peut 
+           remplacer ou supprimer une image capturée (voir les cas d'utilisation TISIR-UC04 et TISIR-UC05 pour de détail).
         
     3.1.9. SCÉNARIOS ALTERNATIFS : 
-      a- Le membre d'une communauté de l'ÉTS abandonne la prise d'images :
+      1a- Le membre d'une communauté de l'ÉTS abandonne volontairement la prise d'images :
       
          * S'il quitte le site et ferme le navigateur :
-           - Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la recyclabilité
-             et reprendre à l'étape 1 du scénatios principale (2.1.9.)
+         
+           1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
+             recyclabilité et reprendre à l'étape 1 du scénatios principale du cas d'utilisation "Mettre la vidéo en marche" 
+             (voir  la
+             section 3.2).
       
          * S'il quitte la page de vérification de la recyclabilité d'un objet pour une autre page de TISIR :
-           - À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS reprend à l'étape où il a laissé.
-           
-      b- La batérie de l'appareil mobile ou de l'ordinateur portable du membre d'une communauté de l'ÉTS est soudainement déchargée :
          
-         * Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la recyclabilité
-           et reprendre à l'étape 1 du scénario principal (2.1.9.)
+           1- À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS reprend à l'étape où il a laissé.
+           
+      1b- La batérie de l'appareil (mobile ou de l'ordinateur portable) du membre d'une communauté de l'ÉTS est soudainement 
+          déchargée:
+         
+           1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
+             recyclabilité et reprendre à l'étape 1 du scénario principal du cas d'utilisation "Mettre la vidéo en marche" 
+             (voir la section 3.2).
       
-      c- Les images de certaines surfaces de l'objet sont absentes :
-
-         * Le membre d'une communauté de l'ÉTS reprend à l'étape 3.
- 
+      3a- Les images de certaines surfaces de l'objet sont absentes :
+      
+           1- Le membre d'une communauté de l'ÉTS reprend à l'étape 2.
+    
+      3b- Le navigateur de l'appareil du membre d'une communauté de l'ÉTS ne supporte pas les fonctionnalités muldimédia de HTML5 et            plus précisement l'emploi de la camera pour le bon fonctionnement de la balise "video" :
+         
+         1- TISIR ne capture pas d'image. 
+         
+         2- Le membre d'une communauté de l'ÉTS quitte l'application et change de navigateur pour Google Chrome.
+    
+    3.1.10. Liste de technologie et de variations de données :
+      3b- Seul le navigateur Google Chrome offre la possibilité d'accéder à la caméra embarquée des appareils mobile pour d'avoir une 
+          vidéo en live. 
+          
+    3.1.11. Exigences spéciales : 
+       - L'image capturée doit présenter la totalité de la surface (hauteur ou base) visible considérée de l'objet.
+       - Une capture d'image doit être enregistrée dans le canvas pour être visible à l'utilisateur en mois d'une seconde.
+       - La vidéo et les images capturées doivent être contenues dans les dimensions de l'écran de l'utilisateur.
+    
+    3.1.12. Fréquence de l'occurrence : Pourraît être pratiquement continue.
+    
+    3.1.13. Questions ouvertes : 
+        1- Quelle est la bonne distance que doit avoir l'appareil mobile ou le laptop de l'utilisateur de l'objet soumis à la 
+           vérification de TISIR ?
+        
+        2- Dans quelle position l'utilisateur doit placer son appareil mobile ou son laptop pour lui permettre d'avoir une vidéo 
+           optimale de l'objet soumis à la vérification de TISIR ?
+        
+        3- Comment gérer la persistence des caractéristiques de différents objets soumis à TISIR ?
+    
  3.2 TISIR-UC02 : Mettre la vidéo en marche
     
     3.2.5. Pré-conditions
@@ -100,8 +134,9 @@
            en marche la vidéo.
         
         2- L'application TISIR allume la caméra et montre en live l'objet. Il indique aussi à l'utilisateur, à titre de rappel, 
-           les principaux endroits de l'objet qu'il faudrait capturer l'image. Ces endoits facilitent l'extraction des caractéristiques
-           de l'images telles que la hauteur, la couleur, l'épaisseur, ... qui seront utilisées pour la reconnaissance de l'objet.
+           les principaux endroits de l'objet qu'il faudrait capturer l'image. Ces endoits facilitent l'extraction des 
+           caractéristiques de l'images telles que la hauteur, la couleur, l'épaisseur, ... qui seront utilisées pour la 
+           reconnaissance de l'objet.
            
         3- Pour chaque endroit ou façade indiqué par TISIR, l'utilisateur met l'objet dans la bonne position et capture une image.
         

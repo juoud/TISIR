@@ -1,4 +1,4 @@
-1. Récit utilisateur considéré
+1. Récit utilisateur considéré :
    En tant que membre d’une communauté de l’ÉTS, je souhaite savoir si un emballage (gobelet, bouteuille ou pot vide, etc) est 
    recyclable après utilisation de son contenu, ce qui me permettrait de le déposer dans le bon bac à poubelle.
 

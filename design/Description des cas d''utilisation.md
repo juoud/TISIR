@@ -42,11 +42,10 @@
         - La vidéo de l'objet doit être en cours de marche.
         - L'utilisateur doit placer l'objet dans le dispositif réservé à cet effet. Ce dispositif sera placé sur chaque îlot de bacs 
           à poubelles du cafétériat de l'ÉTS.
-        - L'utilisateur doit tenir son appareil mobile à une distance xx de l'objet et le placer de façon à ce que la vidéo présente
-          la totalité de l'objet.
+        - L'utilisateur doit tenir son appareil mobile à une distance xx de l'objet.
     
     3.1.7. Post-conditions
-        - La photo d'une des principales façades (surfaces ou côtés) de l'objet est capturée.
+        - L'image d'un principal côté de l'objet est capturée.
     
     3.1.8. Scénario principal
         1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet et la vidéo montrant 
@@ -122,25 +121,100 @@
            optimale de l'objet soumis à la vérification de TISIR ?
         
         3- Comment gérer la persistence des caractéristiques de différents objets soumis à TISIR ?
+        
     
  3.2 TISIR-UC02 : Mettre la vidéo en marche
+    3.2.1 Brève description
+        Un membre d'une communauté de l'ÉTS utilise la camera de son appareil mobile pour tourner la vidéo d'un objet. Le flux d'image
+        fourni par cette vidéo sera utilisées pour la réalisation de cas d'utilisation TISIR-UC01.
+      
+    3.2.2. Portée
+        Web Tool for Information and Sorting Instructions of Recyclables (TISIR).
     
-    3.2.5. Pré-conditions
-        - Le Membre d'une communauté de l'ÉTS doit autoriser TISIR de mettre en marche la caméra ou webcam de son appareil.
+    3.2.3. Acteur principal
+        Membre d'une communauté de l'ÉTS : étudiant(e), enseignant(e), chargé(e) de cours ou un employé(e) de l'administration
+    
+    3.2.4. Acteur secondaire
+        Caméra embarquée ou webcam d'un appareil mobile : fournit le service de video c'est à dire d'images en mouvement.
+    
+    3.2.5. Intéressés et Parties prenantes
+        - Membre d'une communauté de l'ÉTS : souhaite avoir des séquences d'images d'une partie de l'objet pour lui permettre de faire           des captures. 
+    
+    3.2.6. Pré-conditions
+        - Le Membre d'une communauté de l'ÉTS doit autoriser explicitement TISIR à mettre en marche la caméra ou webcam de son 
+          appareil. Cette autorisation se fait à travers le cas d'utilisation TISIR-UC03.   
+        - L'utilisateur doit placer l'objet dans le dispositif réservé à cet effet. Ce dispositif sera placé sur chaque îlot de bacs 
+          à poubelles du cafétériat de l'ÉTS.
+        - L'utilisateur doit tenir son appareil mobile à une distance xx de l'objet. 
+    
+    3.2.7. Post-conditions
+        - Les séquences d'images de l'objet ou d'une partie de l'objet se défilent.
         
-    3.2.7. Scénario principal
+    3.2.8. Scénario principal
         1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet. Il place un objet 
-           à une distance et à une position décidement pré-définies de la caméra ou webcam de son appareil puis il met 
-           en marche la vidéo.
+           à une distance x et à une position décidément pré-définies de la caméra ou webcam de son appareil. Cette dernière est    
+           initialement activée.
         
-        2- L'application TISIR allume la caméra et montre en live l'objet. Il indique aussi à l'utilisateur, à titre de rappel, 
-           les principaux endroits de l'objet qu'il faudrait capturer l'image. Ces endoits facilitent l'extraction des 
-           caractéristiques de l'images telles que la hauteur, la couleur, l'épaisseur, ... qui seront utilisées pour la 
-           reconnaissance de l'objet.
+        2- L'application TISIR renvoie en live le flux d'images de l'objet. Il indique aussi à l'utilisateur, à titre de rappel, 
+           les principaux endroits de l'objet dont il faudrait faire apparaître au premier plan sur la vidéo. Ces endoits permettront 
+           de faciliter l'extraction des caractéristiques de l'images telles que la hauteur, la couleur, l'épaisseur et la teinture. 
+           Ces caractéristiques seront utilisées pour la reconnaissance de l'objet.
            
-        3- Pour chaque endroit ou façade indiqué par TISIR, l'utilisateur met l'objet dans la bonne position et capture une image.
+        3- L'utilisateur change le côté de l'objet apparaissant au premier plan.
         
-        4- TISIR affiche chacune de ses images capturées par la Membre d'une communauté de l'ÉTS.
+        4- Les étapes 2 et 3 se repètent autant de fois que possible.
+        
+        5- Le Membre d'une communauté de l'ÉTS quitte l'application ou décide de capturer les images de l'objet (voir la cas 
+           d'utilisation TISIR-UC01).
+   
+   3.2.9. SCÉNARIOS ALTERNATIFS : 
+      1a- Le membre d'une communauté de l'ÉTS abandonne volontairement la prise d'images :
+      
+         * S'il quitte le site et ferme le navigateur :
+         
+           1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
+             recyclabilité et reprendre à l'étape 1 du scénatios principale du cas d'utilisation TISIR-UC02.
+      
+         * S'il quitte la page de vérification de la recyclabilité d'un objet pour une autre page de TISIR :
+         
+           1- À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS aperçoit toujours la video.
+           
+      1b- La batérie de l'appareil (mobile ou de l'ordinateur portable) du membre d'une communauté de l'ÉTS est soudainement 
+          déchargée:
+         
+           1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
+             recyclabilité et reprendre à l'étape 1 du scénario principal du cas d'utilisation "Activer la camera" 
+             (voir la section 3.3).
+    
+      1c- Le navigateur de l'appareil du membre d'une communauté de l'ÉTS ne supporte pas les fonctionnalités muldimédia de HTML5 et            plus précisement l'emploi de la camera pour le bon fonctionnement de la balise "video" :
+         
+         1- TISIR ne renvoie aucune vidéo. 
+         
+         2- Le membre d'une communauté de l'ÉTS quitte l'application et change de navigateur pour Google Chrome.
+      
+      2a- La vidéo est floue :
+      
+        1- Le membre d'une communauté rafraichit la page de vérification de recyclabilité et active la camera (voir TISIR-UC02).
+    
+    3.2.10. Liste de technologie et de variations de données :
+      3b- Seul le navigateur Google Chrome offre la possibilité d'accéder à la caméra embarquée des appareils mobile pour d'avoir une 
+          vidéo en live. 
+          
+    3.2.11. Exigences spéciales : 
+       - La vidéo renvoyée  doit présenter la totalité de la surface (hauteur ou base) visible considérée de l'objet.
+       - La vidéo doit être contenue dans les dimensions de l'écran de l'utilisateur.
+    
+    3.2.12. Fréquence de l'occurrence : Pourraît être pratiquement continue.
+    
+    3.2.13. Questions ouvertes : 
+        1- Quelle est la bonne distance que doit avoir l'appareil mobile ou le laptop de l'utilisateur de l'objet soumis à la 
+           vérification de TISIR ?
+        
+        2- Dans quelle position l'utilisateur doit placer son appareil mobile ou son laptop pour lui permettre d'avoir une vidéo 
+           optimale de l'objet soumis à la vérification de TISIR ?
+        
+        3- Comment gérer la persistence des caractéristiques de différents objets soumis à TISIR ?
+       
         
 3.3 TISIR-UC03 : Activer la caméra
 

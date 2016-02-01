@@ -36,7 +36,8 @@
         - Membre d'une communauté de l'ÉTS : souhaite connaître le bon bac à poubelle où déposer un objet.
         - Bureau de développement durable (BDD) de l'ÉTS : souhaite réduire le budget alloué au tri des recyclables 
           et sensibiliser les communautés de l'ÉTS sur la bonne pratique de tri et la gestion des recyclables.
-        - Cafétériat de l'ÉTS : souhaite être parmi les tous premiers restaurants universitaires à doter d'un outil de gestion de développement durable.
+        - Cafétériat de l'ÉTS : souhaite être parmi les tous premiers restaurants universitaires à doter d'un outil de gestion de 
+          développement durable.
     
     3.1.6. Pré-conditions
         - La vidéo de l'objet doit être en cours de marche.
@@ -77,7 +78,7 @@
          * S'il quitte le site et ferme le navigateur :
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénatios principale du cas d'utilisation "Mettre la vidéo en marche" 
+             recyclabilité et reprend à l'étape 1 du scénatios principale du cas d'utilisation "Mettre la vidéo en marche" 
              (voir  la
              section 3.2).
       
@@ -89,7 +90,7 @@
           déchargée:
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénario principal du cas d'utilisation "Mettre la vidéo en marche" 
+             recyclabilité et reprend à l'étape 1 du scénario principal du cas d'utilisation "Mettre la vidéo en marche" 
              (voir la section 3.2).
       
       3a- Les images de certaines surfaces de l'objet sont absentes :
@@ -173,7 +174,7 @@
          * S'il quitte le site et ferme le navigateur :
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénatios principale du cas d'utilisation TISIR-UC02.
+             recyclabilité et reprend à l'étape 1 du scénatios principale du cas d'utilisation TISIR-UC02.
       
          * S'il quitte la page de vérification de la recyclabilité d'un objet pour une autre page de TISIR :
          
@@ -183,7 +184,7 @@
           déchargée:
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénario principal du cas d'utilisation "Activer la camera" 
+             recyclabilité et reprend à l'étape 1 du scénario principal du cas d'utilisation "Activer la camera" 
              (voir la section 3.3).
     
       1c- Le navigateur de l'appareil du membre d'une communauté de l'ÉTS ne supporte pas les fonctionnalités muldimédia de HTML5 et            plus précisement l'emploi de la camera pour le bon fonctionnement de la balise "video" :
@@ -242,53 +243,61 @@
         - L'appareil mobile de l'utilisateur doit avoir une caméra embarquée ou une webcam connectée.
     
     3.3.7. Post-conditions
-        - Les séquences d'images de l'objet ou d'une partie de l'objet se défilent.
+        - La caméra s'allume et affiche la vidéo.
         
     3.3.8. Scénario principal
-        1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet. Il place un objet 
-           à une distance x et à une position décidément pré-définies de la caméra ou webcam de son appareil. Cette dernière est    
-           initialement activée.
+        1- Le membre d'une communauté de l'ÉTS est sur la page de vérification de la recyclabilité d'un objet. 
         
-        2- L'application TISIR renvoie en live le flux d'images de l'objet. Il indique aussi à l'utilisateur, à titre de rappel, 
-           les principaux endroits de l'objet dont il faudrait faire apparaître au premier plan sur la vidéo. Ces endoits permettront 
-           de faciliter l'extraction des caractéristiques de l'images telles que la hauteur, la couleur, l'épaisseur et la teinture. 
-           Ces caractéristiques seront utilisées pour la reconnaissance de l'objet.
-           
-        3- L'utilisateur change le côté de l'objet apparaissant au premier plan.
+        2- TSIR affiche le nom d'une caméra embarquée ou bien une webcam connectée à son son mobile.
         
-        4- Les étapes 2 et 3 se repètent autant de fois que possible.
+        3- Le membre d'une communauté de l'ÉTS place un objet   à une distance xx et à une position décidément pré-définies de la 
+           caméra ou webcam de son appareil. Puis il active lance la caméra ou webcam par un cliquant sur le nom de cette dernière.
         
-        5- Le Membre d'une communauté de l'ÉTS quitte l'application ou décide de capturer les images de l'objet (voir la cas 
-           d'utilisation TISIR-UC01).
+        4- L'application TISIR allume la caméra ou webcam et renvoie en live le flux d'images de l'objet. 
+        
+        5- Le Membre d'une communauté de l'ÉTS change de page ou quitte l'application ou encore décide d'explorer la vidéo (voir la 
+           cas d'utilisation TISIR-UC02).
    
    3.3.9. SCÉNARIOS ALTERNATIFS : 
-      1a- Le membre d'une communauté de l'ÉTS abandonne volontairement la prise d'images :
+      1a- Le membre d'une communauté de l'ÉTS ne souhaite pas allumer la caméra :
       
          * S'il quitte le site et ferme le navigateur :
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénatios principale du cas d'utilisation TISIR-UC02.
+             recyclabilité et reprend à l'étape 1 du scénatios principale du cas d'utilisation TISIR-UC03.
       
          * S'il quitte la page de vérification de la recyclabilité d'un objet pour une autre page de TISIR :
          
-           1- À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS aperçoit toujours la video.
+           1- À son retour sur la page de recyclabilité, le membre d'une communauté de l'ÉTS reprend à l'étape 1 du scénatios 
+              principale du cas d'utilisation TISIR-UC03.
            
       1b- La batérie de l'appareil (mobile ou de l'ordinateur portable) du membre d'une communauté de l'ÉTS est soudainement 
           déchargée:
          
            1- Le membre d'une communauté de l'ÉTS accède de nouveau au site et plus précisement à la page de vérification de la 
-             recyclabilité et reprendre à l'étape 1 du scénario principal du cas d'utilisation "Activer la camera" 
+             recyclabilité et reprend à l'étape 1 du scénario principal du cas d'utilisation "Activer la camera" 
              (voir la section 3.3).
     
       1c- Le navigateur de l'appareil du membre d'une communauté de l'ÉTS ne supporte pas les fonctionnalités muldimédia de HTML5 et            plus précisement l'emploi de la camera pour le bon fonctionnement de la balise "video" :
          
-         1- TISIR ne renvoie aucune vidéo. 
+         1- TISIR ne renvoie aucun nom de caméra. 
          
          2- Le membre d'une communauté de l'ÉTS quitte l'application et change de navigateur pour Google Chrome.
       
-      2a- La vidéo est floue :
+      2a- Aucune caméra n'est proposée :
       
-        1- Le membre d'une communauté rafraichit la page de vérification de recyclabilité et active la camera (voir TISIR-UC02).
+         * TISIR identifie aucune caméra ou webcam sur l'appareil membre d'une communauté de l'ÉTS.
+           
+           1- TISIR informe l'utilisateur de l'absence de caméra sur son appareil mobile ou laptop.
+           
+           2- Le membre d'une communauté reprend à l'étape 5 du scénario principal.
+           
+         * La page n'est pas bien rafraichie.
+           1- Le membre d'une communauté de l'ÉTS rafraichit la page de vérification de recyclabilité.
+           
+           2- TISIR affiche le nom d'une caméra embarquée ou bien une webcam connectée à son son mobile.
+           
+           3- Le membre d'une communauté de l'ÉTS à l'étape 2 du scénario principal.
     
     3.3.10. Liste de technologie et de variations de données :
       3b- Seul le navigateur Google Chrome offre la possibilité d'accéder à la caméra embarquée des appareils mobile pour d'avoir une 

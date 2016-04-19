@@ -1,0 +1,106 @@
+﻿
+label{
+    clear:both;
+    display:block;
+    float:left;
+    width:30%;
+    padding:7px;
+}
+
+
+/*Formatage des zones de texte*/
+input, select, textarea {
+    width:50%/*px*/;
+    height:7%/*px*/;
+    
+    text-align:left;
+    padding:7px;
+    border:inset;
+}
+ #video, #canvas {
+    width:60%/*px*/;
+    height:25%/*px*/;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: block;
+    
+}
+
+ a img{
+     margin:0;
+     padding:0;
+     width:75%;
+     height:75%;
+ }
+
+/*Règles de formatage des boutons*/
+button{
+    height:9%/*px*/;
+    width:20%;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+}
+
+#prendrePhotoObjet, #submitImage{   
+    background-color:olive;
+    width:20%;
+    border:outset;
+    border-color:green;
+    color:lightyellow;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#prendrePhotoObjet img{
+     padding:0;
+}
+
+#prendrePhotoObjet img{
+     margin:0;
+     padding:0;
+ }
+
+button:hover{
+    background-color: hsl(150, 50%, 90%);
+}
+
+#prendrePhotoObjet:hover, #submitImage:hover{
+    background-color:hsl(0, 2%, 17%);
+    border-color: hsl(0, 9%, 80%);
+    color: hsl(0, 9%, 80%);
+}
+
+/*Forme d'un bouton lorsqu'on clique dessus*/
+button:active{
+    border:inset;
+    border-width:thick;
+    border-color: hsl(250, 50%, 50%);
+    background-color:hsl(250, 50%, 50%);
+}
+
+#prendrePhotoObjet:active, #submitImage:active{
+    border:inset;
+    border-width:thick;
+    color:hsl(0, 2%, 17%);
+    border-color: hsl(0, 9%, 80%);
+    background-color:hsl(0, 9%, 80%);
+}
+
+/*Règles de formatage communes aux boutons et zones de texte*/
+input, button, label, select, textarea, video, canvas{
+    font-family:Arial;
+    font-size:14.75pt;
+    border-width:thick;
+    border-color:hsl(250, 100%, 100%);
+    margin: 3px;
+}
+
+#header1{
+    overflow:auto;
+    padding-bottom:0.35em;
+}

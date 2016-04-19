@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recyclability de votre objet</title>
+    <link href="Scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="http:/\/code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /-->
+
+    <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <!--script src="http:\//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script-->
+
+
+    <script src="Scripts/commonLibrary.js"></script>
+    <script src="Scripts/configurationMobileTISISRrecyclage.js"></script>
+    <script src="Scripts/recyclabiliteLibrary.js"></script>
+    
+    <!--link href="CSS/default.css" rel="stylesheet" /-->
+    
+    <script src="Scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--script src="http:\//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></!--script-->
+</head>
+<body>
+    <!--Ces codes proviennent de Raymond Camden & Andy Matthews, 2012 -->
+    <div data-role="page" id="recyclability">
+        <div id="main">
+            <div data-role="header" id="header1" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li id="lHome"><a id="defaultPage" data-icon="home">Accueil</a></li>
+                        <li id="lRecyclability"><a id="recyclabPage" class="ui-btn-active ui-state-persist" data-icon="recycle">Recyclabilité</a></li>
+                        <li id="lAboutTisir"><a id="aboutPage" data-icon="info">?</a></li>
+                    </ul>
+                </div>
+                <h2>Recyclabilité d'un objet</h2>
+            </div>
+            <div data-role="content">
+                <form>
+                    
+                    
+                    <fieldset data-role="fieldContain">
+                        <h4>Autorisez vous la caméra  ci-dessous ?</h4>
+                        <ul id="listCameras" data-role="listview" data-inset="true">
+                            
+                        </ul>
+                        <div class="ui-grid-a">
+                            <!--h4>Capturer des photos de l'objet</!--h4-->
+                            <div class="ui-block-a" id="divBoutonCaptureImage">
+                                <input id="captureImageObjet" type="button" data-icon="camera" value="Capturer une image de l'objet" style="border:outset; background-color:green; color:white; z-index:5000;" data-prefetch />
+                            </div>
+                            <div class="ui-block-b">
+                                <input id="effacerPhotoObjet" type="reset" value="Annuler" style="border:outset; z-index:5000;" />
+                            </div>
+                            <!--button id="prendrePhotoObjet" class="bouton">Photo</button-->
+                        </div>
+                        <hr/>
+                        <div class="ui-grid-c">
+                            <div class="ui-block-a">
+                                <canvas id="canvas1" class="audiovisuelle"></canvas>
+                            </div>
+
+                            <div class="ui-block-b">
+                                <canvas id="canvas2" class="audiovisuelle"></canvas>
+                            </div>
+
+                            <div class="ui-block-c">
+                                <canvas id="canvas3" class="audiovisuelle"></canvas>
+                            </div>
+
+                            <div class="ui-block-d">
+                                <canvas id="canvas4" class="audiovisuelle"></canvas>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+                                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <em>Copyright <abbr title="Web Tool for Information and Sorting Instructions of Recyclables">TISIR</abbr> &copy; DoBatI-ÉTS 2016</em>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
